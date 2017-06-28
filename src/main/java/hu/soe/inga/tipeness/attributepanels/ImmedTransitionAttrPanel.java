@@ -81,6 +81,8 @@ public class ImmedTransitionAttrPanel extends TransitionAttrPanel {
                                 tempConString=tempConString.toLowerCase();
                                 String originalString=tempConString;
                                 if (tempConString.equals("")){
+                                    currentTransition.setConditionString("");
+                                    return;
                                 } else {
                                     String placePatern = "#";
                                     String placeName;
